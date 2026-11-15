@@ -1,5 +1,5 @@
 /* 1. Шрифты */
-@import url('./fonts.css');
+@import url('../fonts/fonts.css');
 
 /* 2. Глобальные стили и переменные */
 @import url('./globals.css');
