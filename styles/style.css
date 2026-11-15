@@ -2,3 +2,33 @@
 @import url('./variables.css');
 @import url('./light.css');
 @import url('./dark.css');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+ul,
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    font-family: 'IBM Plex Mono', 'Courier New', monospace;
+    font-weight: 400;
+    min-height: 100vh;
+}
