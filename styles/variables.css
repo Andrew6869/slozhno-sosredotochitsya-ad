@@ -1,5 +1,4 @@
 :root {
-    /* Светлая тема */
     --bg-color: #fff1f7;
     --bg-image: url('../images/cover-image-light.png');
     --text-color: #353430;
@@ -11,7 +10,6 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        /* Тёмная тема */
         --bg-color: #000028;
         --bg-image: url('../images/cover-image-dark.png');
         --text-color: #f1b2ce;
