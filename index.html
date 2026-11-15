@@ -1,43 +1,101 @@
 <!DOCTYPE html>
 <html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="dark light" />
+  <title>Сложно сосредоточиться</title>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <script src="./scripts/script.js" defer></script>
+</head>
+<body class="page">
+<header class="header decorated-zone">
+  <span class="header__rec" aria-hidden="true">REC</span>
+  <nav class="header__theme-menu">
+    <ul class="header__theme-menu-list">
+      <li class="header__theme-menu-item">
+        <button class="header__theme-menu-button header__theme-menu-button_type_light">
+          День
+        </button>
+      </li>
+      <li class="header__theme-menu-item">
+        <button
+                class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
+                disabled
+        >
+          Авто
+        </button>
+      </li>
+      <li class="header__theme-menu-item">
+        <button class="header__theme-menu-button header__theme-menu-button_type_dark">
+          Неон
+        </button>
+      </li>
+    </ul>
+  </nav>
+  <h1 class="header__title">[Заголовок страницы]</h1>
+  <p class="header__subtitle">[Подзаголовок из макета]</p>
+</header>
 
-  <head>
-    <link rel="stylesheet" href="./styles/style.css">
-    <script src="./scripts/script.js" defer></script>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Сложно сосредоточиться</title>
-    <script src="./scripts/script.js"></script>
-  </head>
-  <body class="page">
-    <header class="header decorated-zone">
-      <nav class="header__theme-menu">
-        <ul class="header__theme-menu-list">
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_light"
-            >
-              День
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
-              disabled
-            >
-              Авто
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_dark"
-            >
-              Неон
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  </body>
+<main class="main">
+  <section class="section">
+    <h2 class="section__title">[Почему это сложно]</h2>
+    <article class="card">
+      <h3 class="card__title">[Заголовок карточки]</h3>
+      <p class="card__text">[Текст]</p>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section__title">[Что снижает концентрацию]</h2>
+    <ul class="cards">
+      <li class="card">
+        <h3 class="card__title">[Многозадачность]</h3>
+        <p class="card__text">[Текст]</p>
+      </li>
+      <li class="card">
+        <h3 class="card__title">[Телефон]</h3>
+        <p class="card__text">[Текст]</p>
+      </li>
+      <li class="card">
+        <h3 class="card__title">[Уведомления]</h3>
+        <p class="card__text">[Текст]</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2 class="section__title">[Как сосредоточиться]</h2>
+    <article class="card">
+      <h3 class="card__title">[Совет]</h3>
+      <p class="card__text">[Текст]</p>
+    </article>
+  </section>
+
+  <section class="section">
+    <h2 class="section__title">[Галерея]</h2>
+    <ul class="gallery">
+      <li class="gallery__item">
+        <img class="gallery__image" src="./images/sunset.png" alt="[Описание картинки]" />
+      </li>
+      <li class="gallery__item">
+        <img class="gallery__image" src="./images/ice-cream.png" alt="[Описание картинки]" />
+      </li>
+      <li class="gallery__item">
+        <img class="gallery__image" src="./images/tape.png" alt="[Описание картинки]" />
+      </li>
+      <li class="gallery__item">
+        <img class="gallery__image" src="./images/books.png" alt="[Описание картинки]" />
+      </li>
+      <li class="gallery__item">
+        <img class="gallery__image" src="./images/street.png" alt="[Описание картинки]" />
+      </li>
+    </ul>
+  </section>
+</main>
+
+<footer class="footer decorated-zone">
+  <h2 class="footer__title">[Заголовок футера]</h2>
+</footer>
+</body>
 </html>
