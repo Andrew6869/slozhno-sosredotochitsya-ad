@@ -168,3 +168,20 @@ body {
     object-fit: cover;
     object-position: center;
 }
+
+.footer {
+    height: 100vh;
+    min-height: 668px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    padding: 20px 10px;
+}
+
+.footer__title {
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+    line-height: 0.825;
+    color: var(--title-color, #ffc2e2);
+    text-shadow: 2px 2px 0 var(--accent-color, #ff8dcb);
+    text-align: center;
+}
