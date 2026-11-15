@@ -1,9 +1,4 @@
-/* 1. Шрифты */
-@import url('./fonts.css');
-
-/* 2. Глобальные стили и переменные */
+@import url('../fonts/fonts.css');
 @import url('./variables.css');
-
-/* 3. Собственные стили тем */
 @import url('./light.css');
 @import url('./dark.css');
