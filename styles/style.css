@@ -1,59 +1,17 @@
-@import url('fonts.css');
+/* 1. Шрифты */
+@import url('./fonts.css');
+
+/* 2. Глобальные стили и переменные */
+@import url('./globals.css');
 @import url('./variables.css');
+
+/* 3. Собственные стили тем */
 @import url('./light.css');
 @import url('./dark.css');
 
-/* Сброс */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-body,
-h1, h2, h3, h4, h5, h6,
-p,
-ul,
-figure {
-    margin: 0;
-    padding: 0;
-}
-
-ul {
-    list-style: none;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
-/* Базовые стили */
-body {
-    font-family: 'IBM Plex Mono', 'Courier New', monospace;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.3;
-    min-height: 100vh;
-    color: var(--text-color, #353430);
-    background-color: var(--bg-color, #fff1f7);
-    background-image: var(--bg-image);
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-/* Скрываем стандартный маркер у списков, если он не нужен */
-.header__theme-menu-list {
-    list-style: none;
-}
-
-/* Общие стили для ссылок, если появятся */
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-/* HEADER */
+/* =========================================
+   HEADER
+   ========================================= */
 .header {
     height: 100vh;
     min-height: 668px;
@@ -159,7 +117,60 @@ a {
     text-align: left;
 }
 
-/* FOOTER */
+/* =========================================
+   MAIN
+   ========================================= */
+.main {
+    display: grid;
+    gap: 40px;
+    padding: 40px 10px;
+}
+
+.section {
+    display: grid;
+    gap: 20px;
+}
+
+.section__title {
+    font-size: 18px;
+    color: var(--accent-color, #ff8dcb);
+}
+
+.cards {
+    display: grid;
+    gap: 20px;
+}
+
+.card__title {
+    font-size: 18px;
+    background-color: var(--accent-color, #ff8dcb);
+    color: var(--accent-text-color, #353430);
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.card__text {
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+/* Галерея */
+.gallery {
+    display: grid;
+    gap: 10px;
+}
+
+.gallery__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
 .footer {
     height: 100vh;
     min-height: 668px;
@@ -177,7 +188,9 @@ a {
     text-align: center;
 }
 
-/* АДАПТИВ */
+/* =========================================
+   АДАПТИВ
+   ========================================= */
 @media (width >= 768px) {
     .header {
         padding: 20px;
@@ -193,7 +206,6 @@ a {
         gap: 60px;
     }
 
-    /* Сетка для секций */
     .section {
         grid-template-columns: 1fr 2fr;
         gap: 20px;
@@ -202,7 +214,6 @@ a {
         align-self: start;
     }
 
-    /* Галерея */
     .gallery {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -219,12 +230,10 @@ a {
         justify-content: center;
     }
 
-    /* Карточки в 3 колонки */
     .cards {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    /* Карточки в секции 1 и 2 занимают особое положение */
     .section:nth-child(1) .cards {
         grid-template-columns: 1fr 1fr;
     }

@@ -1,7 +1,7 @@
 :root {
-    /* Светлая тема (по умолчанию) */
+    /* Светлая тема */
     --bg-color: #fff1f7;
-    --bg-image: url('../images/cover-image-light.png'); /* Убедитесь, что картинка есть */
+    --bg-image: url('../images/cover-image-light.png');
     --text-color: #353430;
     --title-color: #ffc2e2;
     --accent-color: #ff8dcb;
@@ -11,9 +11,9 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        /* Тёмная тема (Неон) */
+        /* Тёмная тема */
         --bg-color: #000028;
-        --bg-image: url('../images/cover-image-dark.png'); /* Убедитесь, что картинка есть */
+        --bg-image: url('../images/cover-image-dark.png');
         --text-color: #f1b2ce;
         --title-color: #db00ff;
         --accent-color: #ff0070;
@@ -22,7 +22,6 @@
     }
 }
 
-/* Явное переключение классами на body */
 body.theme-light {
     --bg-color: #fff1f7;
     --bg-image: url('../images/cover-image-light.png');
