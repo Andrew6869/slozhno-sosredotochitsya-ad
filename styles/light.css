@@ -1,3 +1,27 @@
-body.theme-light .header__rec {
-    display: none;
+:root.theme-light {
+    --page-background-image: url('../images/cover-image-light.png');
+    --page-background-color: #fff1f7;
+    --accent-color: #ff8dcb;
+    --interface-color: #353430;
+    --accent-color-hover: rgb(53 52 48 / 0.4);
+    --text-color: #353430;
+    --title-color: #353430;
+    --heading-color: #ffc2e6;
+    --rec-display: none;
+    color-scheme: light;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --page-background-image: url('../images/cover-image-light.png');
+        --page-background-color: #fff1f7;
+        --accent-color: #ff8dcb;
+        --interface-color: #353430;
+        --accent-color-hover: rgb(53 52 48 / 0.4);
+        --text-color: #353430;
+        --title-color: #353430;
+        --heading-color: #ffc2e6;
+        --rec-display: none;
+        color-scheme: light;
+    }
 }
